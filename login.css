@@ -1,10 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* END GLOBAL RESET */
+html {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(9, 9, 231, 0.5),
+    rgba(6, 253, 109, 0.5)
+  );
+  background-image: (
+    url "https://interactive-examples.mdn.mozilla.net/media/examples/lizard.png"
+  );
+}
+
+/* HEADER SECTION */
+a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+}
+p {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(124, 217, 132);
+  border-bottom: 1px solid #ccc;
+}
+
+.left-section {
+  display: flex;
+  padding-left: 30px;
+  gap: 120px;
+}
+
+/* .right-section {
+  flex-grow: 1;
+  text-align: right;
+} */
+
+.round-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.round-image-login {
+  width: 50px;
+  height: 50px;
+}
+div.right-section > a > img {
+  border-radius: 0%;
+}
+.round-image:hover {
+  transform: scale(1.3);
+}
+
+/* END OF HEADER SECTION */
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background-color: lightblue;
 }
 .form-container {
   display: flex;
